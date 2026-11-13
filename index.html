@@ -1,263 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy - MRX Naamkaran</title>
     <style>
         :root {
-            --primary: #FF7043;
-            --primary-dark: #D84315;
-            --accent: #FFB300;
-            --text-main: #2C2018;
-            --text-secondary: #5C4D43;
-            --bg-body: #FFFDF9;
+            --bg-color: #FFFDF8;
             --card-bg: #FFFFFF;
-            --border-color: #EFE4DC;
-            --badge-bg: #FFF3E0;
+            --primary: #B45309;
+            --accent: #DC2626;
+            --text-main: #1F2937;
+            --text-muted: #4B5563;
+            --border-color: #F3E8D2;
         }
-
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-            background-color: var(--bg-body);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
             color: var(--text-main);
             line-height: 1.7;
             padding: 24px 16px;
         }
-
         .container {
             max-width: 820px;
             margin: 0 auto;
             background: var(--card-bg);
-            border-radius: 16px;
-            padding: 40px 32px;
             border: 1px solid var(--border-color);
-            box-shadow: 0 4px 20px rgba(44, 32, 24, 0.05);
+            border-radius: 16px;
+            padding: 32px 28px;
+            box-shadow: 0 4px 20px rgba(180, 83, 9, 0.06);
         }
-
         .header {
-            text-align: center;
-            margin-bottom: 36px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
         }
-
-        .header h1 {
-            color: var(--primary-dark);
-            font-size: 28px;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-
-        .header .subtitle {
-            color: var(--text-secondary);
-            font-size: 16px;
-            margin-bottom: 14px;
-        }
-
-        .badge-bar {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 12px;
-        }
-
         .badge {
-            background-color: var(--badge-bg);
-            color: var(--primary-dark);
+            display: inline-block;
+            background: #FEF3C7;
+            color: var(--primary);
             font-size: 13px;
             font-weight: 600;
             padding: 4px 12px;
-            border-radius: 20px;
-            border: 1px solid #FFE0B2;
-        }
-
-        h2 {
-            color: var(--primary-dark);
-            font-size: 20px;
-            margin-top: 32px;
-            margin-bottom: 12px;
-        }
-
-        p {
-            margin-bottom: 14px;
-            color: var(--text-secondary);
-            font-size: 15px;
-        }
-
-        ul {
-            margin-left: 20px;
-            margin-bottom: 18px;
-            color: var(--text-secondary);
-        }
-
-        li {
-            margin-bottom: 8px;
-            font-size: 15px;
-        }
-
-        .highlight-box {
-            background: #FFF8E1;
-            border-left: 4px solid var(--accent);
-            padding: 16px 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            color: #4E342E;
-            font-size: 14px;
-        }
-
-        .developer-card {
-            background: #FFF3E0;
-            border: 1px solid #FFE0B2;
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 36px;
-        }
-
-        .developer-card h3 {
-            color: var(--primary-dark);
-            font-size: 17px;
+            border-radius: 999px;
             margin-bottom: 10px;
         }
-
-        .developer-card p {
+        h1 {
+            font-size: 28px;
+            color: var(--text-main);
             margin-bottom: 6px;
+        }
+        .meta {
             font-size: 14px;
+            color: var(--text-muted);
         }
-
+        h2 {
+            font-size: 20px;
+            color: var(--primary);
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 14px;
+            color: var(--text-muted);
+        }
+        ul {
+            margin: 10px 0 16px 22px;
+            color: var(--text-muted);
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background: #FFFBEB;
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: var(--text-main);
+            font-size: 15px;
+        }
         a {
-            color: var(--primary-dark);
+            color: var(--accent);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
         }
-
         a:hover {
             text-decoration: underline;
         }
-
         .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 13px;
-            color: #8D6E63;
-            border-top: 1px solid var(--border-color);
+            margin-top: 36px;
             padding-top: 20px;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 24px 18px;
-            }
-            .header h1 {
-                font-size: 23px;
-            }
-            h2 {
-                font-size: 18px;
-            }
+            border-top: 1px solid var(--border-color);
+            font-size: 14px;
+            color: var(--text-muted);
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <span class="badge">Official Privacy Policy</span>
+            <h1>Privacy Policy for MRX Naamkaran</h1>
+            <p class="meta">
+                <strong>App Name:</strong> MRX Naamkaran - Baby Name Generator<br />
+                <strong>Package ID:</strong> com.aistudio.naamkaran.app<br />
+                <strong>Effective Date:</strong> November 13, 2026
+            </p>
+        </div>
 
-<div class="container">
-    <div class="header">
-        <h1>Privacy Policy</h1>
-        <div class="subtitle">MRX Naamkaran – Indian Baby Names & Meanings</div>
-        <div class="badge-bar">
-            <span class="badge">Last Updated: November 2026</span>
-            <span class="badge">Effective Date: November 2026</span>
-            <span class="badge">No Account Required</span>
-            <span class="badge">Free App</span>
+        <div class="highlight-box">
+            <strong>Summary:</strong> MRX Naamkaran is a <strong>100% Free</strong> application. We do not require account registration, do not collect sensitive personal data, do not sell user information, and do not process any payments or subscriptions.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>
+            Welcome to <strong>MRX Naamkaran</strong> ("we", "our", or "us"). We respect your privacy and are committed to protecting it. This Privacy Policy explains how MRX Naamkaran handles information when you use our mobile application available on the Amazon Appstore and Android devices.
+        </p>
+
+        <h2>2. Information We Collect and How It Is Used</h2>
+        <p>
+            MRX Naamkaran is designed to work without collecting personally identifiable information (PII).
+        </p>
+        <ul>
+            <li><strong>No Account Required:</strong> You do not need to sign up, log in, or provide your name, phone number, email address, or location to use the app.</li>
+            <li><strong>Name Generation Inputs:</strong> When you select filters such as Gender, Tradition/Dharm, Starting Letter, Rashi, Vibe/Style, Date/Time of Birth (for auspicious letter calculation), or optional Parent/Sibling first names, these inputs are used solely to generate relevant baby name suggestions for you.</li>
+            <li><strong>Local On-Device Storage:</strong> Your saved/favorite baby names, search history, family notes, and app preferences (such as dark mode or sound settings) are stored locally on your device using Android's internal storage. You can clear this data at any time from within the app's History/Settings screen or through your device settings.</li>
+        </ul>
+
+        <h2>3. 100% Free App (No Payments or Financial Data)</h2>
+        <p>
+            MRX Naamkaran is completely free to use. The application does not contain in-app purchases, paid subscriptions, locked premium content, or payment gateways. We never request or collect credit card details, UPI IDs, bank account numbers, or billing information.
+        </p>
+
+        <h2>4. Network Access & Permissions</h2>
+        <p>
+            The application requests only standard, non-invasive Android permissions required for core functionality:
+        </p>
+        <ul>
+            <li><strong>Internet & Network State (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> Used to fetch baby name suggestions over secure HTTPS connections from our API server and to check if a newer app version is available.</li>
+            <li><strong>Text-to-Speech (Voice Pronunciation):</strong> Uses your device's built-in Android Text-to-Speech engine to pronounce baby names aloud. No audio is recorded.</li>
+        </ul>
+        <p>
+            We do <strong>not</strong> access your camera, microphone, contacts, call logs, SMS, photos, or GPS location.
+        </p>
+
+        <h2>5. Data Sharing and Third Parties</h2>
+        <p>
+            We do not sell, trade, rent, or share any user data with third-party advertisers or data brokers. Anonymous search filter parameters sent to our backend service (hosted on Cloudflare Workers) are processed strictly to return baby name suggestions and are not used for profiling or advertising.
+        </p>
+
+        <h2>6. Children's & Family Privacy</h2>
+        <p>
+            MRX Naamkaran is a utility app designed for parents and families looking for baby names. We do not knowingly collect personal information from children under the age of 13 (or the applicable age in your jurisdiction).
+        </p>
+
+        <h2>7. Data Security & Retention</h2>
+        <p>
+            All communication between the app and our name suggestion service takes place over encrypted HTTPS connections. Because your favorite names and history are saved locally on your device, uninstalling the app or clearing app storage permanently deletes all locally stored data.
+        </p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>
+            We may update our Privacy Policy from time to time to reflect app improvements or legal requirements. Any updates will be posted on this page with an updated effective date.
+        </p>
+
+        <h2>9. Contact Us</h2>
+        <p>
+            If you have any questions, concerns, or feedback regarding this Privacy Policy or the MRX Naamkaran app, please contact us at:
+        </p>
+        <p>
+            <strong>Developer:</strong> MRX Naamkaran (Sonu Lal)<br />
+            <strong>Email:</strong> <a href="mailto:sonukumar4454596@gmail.com">sonukumar4454596@gmail.com</a>
+        </p>
+
+        <div class="footer">
+            &copy; 2026 MRX Naamkaran. All rights reserved.
         </div>
     </div>
-
-    <div class="highlight-box">
-        <strong>Summary for Users:</strong> <em>MRX Naamkaran</em> does <strong>NOT</strong> ask you to create an account and does <strong>NOT</strong> collect your name, phone number, email, location, contacts or any personal identity. Your saved names and history stay on your own phone. The app is completely free and has no in-app purchases.
-    </div>
-
-    <h2>1. Introduction</h2>
-    <p>
-        Welcome to <strong>MRX Naamkaran</strong> ("we", "our", or "the App"), developed by <strong>Satyamurth</strong>. We respect your privacy and are committed to protecting it. This Privacy Policy explains how the application works and what information it does and does not use.
-    </p>
-
-    <h2>2. Information We Do Not Collect</h2>
-    <p>MRX Naamkaran does <strong>NOT</strong> collect:</p>
-    <ul>
-        <li><strong>No Personal Identifiable Information:</strong> We do not ask for your name, phone number, address, email address, age, or gender.</li>
-        <li><strong>No Account Creation:</strong> No login, signup, or user authentication is required. You can use all features anonymously.</li>
-        <li><strong>No Device or Location Tracking:</strong> We do not access your GPS location, contact list, camera, microphone, SMS, or phone files.</li>
-        <li><strong>No Third-Party Analytics or Ad Trackers:</strong> The app does not include advertising or analytics SDKs such as AdMob, Facebook Pixel or Firebase Analytics.</li>
-        <li><strong>No Payments:</strong> The app is completely free. It does not process any payment and does not collect any payment information.</li>
-    </ul>
-
-    <h2>3. Information Stored Locally on Your Device</h2>
-    <p>
-        The app lets you save your favorite names and keeps a history of your generated names. This information is stored <strong>only inside your device's local storage</strong>.
-    </p>
-    <ul>
-        <li>This data stays on your device and is not uploaded to our servers or any cloud.</li>
-        <li>If you clear the app storage or uninstall the app, your saved names and history are permanently deleted.</li>
-    </ul>
-
-    <h2>4. Name Generation and Rashi / Nakshatra Feature</h2>
-    <p>
-        When you generate baby names (for example by letter, rashi, religion or style), the app sends your selected search options to our secure backend service, which may use Google's Gemini AI to prepare the name suggestions.
-    </p>
-    <ul>
-        <li>Only the options you select (such as letter "A", gender "Boy", style "Modern") are used to generate names.</li>
-        <li>The "Janam Tarikh Se Shubh Akshar" feature uses the date and time you enter only to calculate the Rashi, Nakshatra and lucky letter. We do not use it to identify you, and we do not store it in any profile or account.</li>
-        <li>We do not send your name, phone number, email, contacts or any other personal details.</li>
-        <li>Like any internet service, the servers involved may technically receive standard connection information such as an IP address in order to respond to the request. We do not use it to identify you or to build any user profile.</li>
-    </ul>
-
-    <h2>5. Audio & Text-to-Speech (Speaker Feature)</h2>
-    <p>
-        The app provides a pronunciation feature (speaker button) so parents can hear how a name sounds.
-    </p>
-    <ul>
-        <li>This feature uses your Android device's built-in <strong>Text-to-Speech (TTS) engine</strong>.</li>
-        <li>Speech is generated on your phone. No voice is recorded and no audio is uploaded anywhere.</li>
-    </ul>
-
-    <h2>6. App Permissions</h2>
-    <p>MRX Naamkaran requires only minimal Android permissions:</p>
-    <ul>
-        <li><strong>INTERNET:</strong> Required to connect to the name generation service.</li>
-        <li><strong>TTS service query:</strong> Required on newer Android versions to find the phone's built-in speech engine for audio pronunciation.</li>
-    </ul>
-    <p>We do not request sensitive permissions such as Camera, Location, Microphone, Contacts or Storage.</p>
-
-    <h2>7. Children's Privacy</h2>
-    <p>
-        MRX Naamkaran is designed for parents and families looking for baby names. The app does not knowingly collect any personal information from children under the age of 13.
-    </p>
-
-    <h2>8. Changes to This Privacy Policy</h2>
-    <p>
-        We may update this Privacy Policy from time to time to reflect app updates or legal requirements. Any changes will be posted on this page with an updated "Last Updated" date.
-    </p>
-
-    <h2>9. Developer & Contact Information</h2>
-    <div class="developer-card">
-        <h3>Contact the Developer</h3>
-        <p>If you have any questions, suggestions, or concerns about this Privacy Policy or the app, please reach out:</p>
-        <p><strong>Developer:</strong> Satyamurth</p>
-        <p><strong>Email:</strong> <a href="mailto:appdeveloperall143@gmail.com">appdeveloperall143@gmail.com</a></p>
-        <p><strong>App Name:</strong> MRX Naamkaran</p>
-        <p><strong>Follow:</strong> Instagram <code>@mrx143_lyrics</code> | YouTube <code>@mrx143musicai</code> | Snapchat <code>mrx143.lyrics</code></p>
-    </div>
-
-    <div class="footer">
-        &copy; 2026 MRX Naamkaran. Created with love by Satyamurth. All rights reserved.
-    </div>
-</div>
-
 </body>
 </html>
